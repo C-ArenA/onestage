@@ -13,26 +13,32 @@ SimpleGraphics osciloscopio;
 
 int main( int argc, char* args[] )
 {
-    
+    bool isRunning;
     int myKey;
+    float freq;
+    float VceQ;
+    float Vout_peak;
+    float Vsatura;
+    float Vcorta;
+    system("clear");
     oneStageAmp.recibeDatos();
-    
+    system("clear");
+    std::cout << "\t****************INSTRUCCIONES******************:\nUtilice las teclas para modificar los siguientes valores: \n" 
+        << "Punto Q\t\t\t\t: Flechas arriba/abajo\nFrecuencia\t\t\t: Flechas Izquierda/Derecha\n" 
+        << "Amplitud de la señal de entrada\t: Teclas W/S\nVoltaje de Polarización\t\t: Teclas A/D\n\n" 
+        << "Algo más: Si quiere salir de la simulación puede presionar la tecla ESC\n\n"
+        << "Recuerde: Cada vez que realice una modificación se le mostrarán en la consola los nuevos valores. \n"
+        << "Los valores se mostraran así:"<< std::endl;
+        oneStageAmp.showMe();
+        std::cout << "\n*********************************************************************************\nENTENDIDO? Presione 1 para comenzar o 0 para salir:" << std::endl;
+        std::cin >> isRunning;
+
     if( initgraph("OneStage - Carlos Arena", &oneStageWindow, &oneStageRenderer, SCREEN_WIDTH, SCREEN_HEIGHT))
     {
-        float freq;
-        float VceQ;
-        float Vout_peak;
-        int Vsatura;
-        int Vcorta;
-        bool isRunning = true;
+        SDL_Event mariposa;
         bool &isRunningRef = isRunning;
         
-
-        SDL_Event mariposa;
-        oneStageAmp.showMe();
-        std::cout << "La ventana   " << oneStageWindow << std::endl;
-        std::cout << "El render   " << oneStageRenderer << std::endl;
-        //GameLoop
+        //*************************** ANCHOR GameLoop ************************************
         while (isRunning == true)
         {
             myKey = eventManager(mariposa, isRunningRef);
@@ -49,15 +55,8 @@ int main( int argc, char* args[] )
             osciloscopio.axis();
             osciloscopio.grid(VceQ);
             osciloscopio.drawSomeFunc(freq, VceQ, Vout_peak, Vsatura, Vcorta);
-            //std::cout << "tiempo máximo" << oneStageAmp.setGetTiempoVisto() << std::endl;
-            //std::cout << "pixpervgrid: " << osciloscopio.getpixpervgrid() << std::endl;
             //------------ ANCHOR UPDATES ---------------
             osciloscopio.update();
-            /*
-            SDL_SetRenderDrawColor( oneStageRenderer, 0x00, 0xFF, 0x00, 0xFF );
-			SDL_RenderClear( oneStageRenderer );
-            SDL_RenderPresent( oneStageRenderer);
-			*/	
         }
         
 

@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /home/arena/onestage
 CMAKE_BINARY_DIR = /home/arena/onestage/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/graphs.dir
+# Target rules for target CMakeFiles/onestage.dir
 
 # All Build rule for target.
-CMakeFiles/graphs.dir/all:
-	$(MAKE) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/depend
-	$(MAKE) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/arena/onestage/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target graphs"
-.PHONY : CMakeFiles/graphs.dir/all
+CMakeFiles/onestage.dir/all:
+	$(MAKE) -f CMakeFiles/onestage.dir/build.make CMakeFiles/onestage.dir/depend
+	$(MAKE) -f CMakeFiles/onestage.dir/build.make CMakeFiles/onestage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/arena/onestage/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target onestage"
+.PHONY : CMakeFiles/onestage.dir/all
 
 # Include target in all.
-all: CMakeFiles/graphs.dir/all
+all: CMakeFiles/onestage.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/graphs.dir/rule: cmake_check_build_system
+CMakeFiles/onestage.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/arena/onestage/build/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/graphs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/onestage.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/arena/onestage/build/CMakeFiles 0
-.PHONY : CMakeFiles/graphs.dir/rule
+.PHONY : CMakeFiles/onestage.dir/rule
 
 # Convenience name for target.
-graphs: CMakeFiles/graphs.dir/rule
+onestage: CMakeFiles/onestage.dir/rule
 
-.PHONY : graphs
-
-# clean rule for target.
-CMakeFiles/graphs.dir/clean:
-	$(MAKE) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/clean
-.PHONY : CMakeFiles/graphs.dir/clean
+.PHONY : onestage
 
 # clean rule for target.
-clean: CMakeFiles/graphs.dir/clean
+CMakeFiles/onestage.dir/clean:
+	$(MAKE) -f CMakeFiles/onestage.dir/build.make CMakeFiles/onestage.dir/clean
+.PHONY : CMakeFiles/onestage.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/onestage.dir/clean
 
 .PHONY : clean
 

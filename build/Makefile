@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named graphs
+# Target rules for targets named onestage
 
 # Build rule for target.
-graphs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 graphs
-.PHONY : graphs
+onestage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 onestage
+.PHONY : onestage
 
 # fast build rule for target.
-graphs/fast:
-	$(MAKE) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/build
-.PHONY : graphs/fast
+onestage/fast:
+	$(MAKE) -f CMakeFiles/onestage.dir/build.make CMakeFiles/onestage.dir/build
+.PHONY : onestage/fast
 
 src/Amplificador.o: src/Amplificador.cpp.o
 
@@ -129,7 +129,7 @@ src/Amplificador.o: src/Amplificador.cpp.o
 
 # target to build an object file
 src/Amplificador.cpp.o:
-	$(MAKE) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/src/Amplificador.cpp.o
+	$(MAKE) -f CMakeFiles/onestage.dir/build.make CMakeFiles/onestage.dir/src/Amplificador.cpp.o
 .PHONY : src/Amplificador.cpp.o
 
 src/Amplificador.i: src/Amplificador.cpp.i
@@ -138,7 +138,7 @@ src/Amplificador.i: src/Amplificador.cpp.i
 
 # target to preprocess a source file
 src/Amplificador.cpp.i:
-	$(MAKE) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/src/Amplificador.cpp.i
+	$(MAKE) -f CMakeFiles/onestage.dir/build.make CMakeFiles/onestage.dir/src/Amplificador.cpp.i
 .PHONY : src/Amplificador.cpp.i
 
 src/Amplificador.s: src/Amplificador.cpp.s
@@ -147,7 +147,7 @@ src/Amplificador.s: src/Amplificador.cpp.s
 
 # target to generate assembly for a file
 src/Amplificador.cpp.s:
-	$(MAKE) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/src/Amplificador.cpp.s
+	$(MAKE) -f CMakeFiles/onestage.dir/build.make CMakeFiles/onestage.dir/src/Amplificador.cpp.s
 .PHONY : src/Amplificador.cpp.s
 
 src/SimpleGraphics.o: src/SimpleGraphics.cpp.o
@@ -156,7 +156,7 @@ src/SimpleGraphics.o: src/SimpleGraphics.cpp.o
 
 # target to build an object file
 src/SimpleGraphics.cpp.o:
-	$(MAKE) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/src/SimpleGraphics.cpp.o
+	$(MAKE) -f CMakeFiles/onestage.dir/build.make CMakeFiles/onestage.dir/src/SimpleGraphics.cpp.o
 .PHONY : src/SimpleGraphics.cpp.o
 
 src/SimpleGraphics.i: src/SimpleGraphics.cpp.i
@@ -165,7 +165,7 @@ src/SimpleGraphics.i: src/SimpleGraphics.cpp.i
 
 # target to preprocess a source file
 src/SimpleGraphics.cpp.i:
-	$(MAKE) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/src/SimpleGraphics.cpp.i
+	$(MAKE) -f CMakeFiles/onestage.dir/build.make CMakeFiles/onestage.dir/src/SimpleGraphics.cpp.i
 .PHONY : src/SimpleGraphics.cpp.i
 
 src/SimpleGraphics.s: src/SimpleGraphics.cpp.s
@@ -174,7 +174,7 @@ src/SimpleGraphics.s: src/SimpleGraphics.cpp.s
 
 # target to generate assembly for a file
 src/SimpleGraphics.cpp.s:
-	$(MAKE) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/src/SimpleGraphics.cpp.s
+	$(MAKE) -f CMakeFiles/onestage.dir/build.make CMakeFiles/onestage.dir/src/SimpleGraphics.cpp.s
 .PHONY : src/SimpleGraphics.cpp.s
 
 src/mygraphics.o: src/mygraphics.cpp.o
@@ -183,7 +183,7 @@ src/mygraphics.o: src/mygraphics.cpp.o
 
 # target to build an object file
 src/mygraphics.cpp.o:
-	$(MAKE) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/src/mygraphics.cpp.o
+	$(MAKE) -f CMakeFiles/onestage.dir/build.make CMakeFiles/onestage.dir/src/mygraphics.cpp.o
 .PHONY : src/mygraphics.cpp.o
 
 src/mygraphics.i: src/mygraphics.cpp.i
@@ -192,7 +192,7 @@ src/mygraphics.i: src/mygraphics.cpp.i
 
 # target to preprocess a source file
 src/mygraphics.cpp.i:
-	$(MAKE) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/src/mygraphics.cpp.i
+	$(MAKE) -f CMakeFiles/onestage.dir/build.make CMakeFiles/onestage.dir/src/mygraphics.cpp.i
 .PHONY : src/mygraphics.cpp.i
 
 src/mygraphics.s: src/mygraphics.cpp.s
@@ -201,7 +201,7 @@ src/mygraphics.s: src/mygraphics.cpp.s
 
 # target to generate assembly for a file
 src/mygraphics.cpp.s:
-	$(MAKE) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/src/mygraphics.cpp.s
+	$(MAKE) -f CMakeFiles/onestage.dir/build.make CMakeFiles/onestage.dir/src/mygraphics.cpp.s
 .PHONY : src/mygraphics.cpp.s
 
 src/onestage.o: src/onestage.cpp.o
@@ -210,7 +210,7 @@ src/onestage.o: src/onestage.cpp.o
 
 # target to build an object file
 src/onestage.cpp.o:
-	$(MAKE) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/src/onestage.cpp.o
+	$(MAKE) -f CMakeFiles/onestage.dir/build.make CMakeFiles/onestage.dir/src/onestage.cpp.o
 .PHONY : src/onestage.cpp.o
 
 src/onestage.i: src/onestage.cpp.i
@@ -219,7 +219,7 @@ src/onestage.i: src/onestage.cpp.i
 
 # target to preprocess a source file
 src/onestage.cpp.i:
-	$(MAKE) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/src/onestage.cpp.i
+	$(MAKE) -f CMakeFiles/onestage.dir/build.make CMakeFiles/onestage.dir/src/onestage.cpp.i
 .PHONY : src/onestage.cpp.i
 
 src/onestage.s: src/onestage.cpp.s
@@ -228,7 +228,7 @@ src/onestage.s: src/onestage.cpp.s
 
 # target to generate assembly for a file
 src/onestage.cpp.s:
-	$(MAKE) -f CMakeFiles/graphs.dir/build.make CMakeFiles/graphs.dir/src/onestage.cpp.s
+	$(MAKE) -f CMakeFiles/onestage.dir/build.make CMakeFiles/onestage.dir/src/onestage.cpp.s
 .PHONY : src/onestage.cpp.s
 
 # Help Target
@@ -238,7 +238,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... graphs"
+	@echo "... onestage"
 	@echo "... edit_cache"
 	@echo "... src/Amplificador.o"
 	@echo "... src/Amplificador.i"

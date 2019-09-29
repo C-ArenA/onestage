@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11    CMakeFiles/onestage.dir/src/Amplificador.cpp.o CMakeFiles/onestage.dir/src/SimpleGraphics.cpp.o CMakeFiles/onestage.dir/src/mygraphics.cpp.o CMakeFiles/onestage.dir/src/onestage.cpp.o  -o onestage -lSDL2 

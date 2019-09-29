@@ -32,9 +32,9 @@ Amplificador::~Amplificador()
 //Función para recibir datos iniciales para el amplificador
 void Amplificador::recibeDatos()
 {
-    std::cout << "Bienvenido a OneStage, el simulador de amplificador de una etapa." << std::endl;
+    std::cout << "Hola, soy Carlos Arena. Bienvenido a OneStage, el simulador de amplificador de una etapa!!!!!" << std::endl;
     std::cout << "Los siguientes valores que ingrese serán para dar inicio a la simulación" << std::endl;
-    std::cout << "Podrá variarlos más adelante" << std::endl;
+    std::cout << "Podrá variarlos más adelante (Recomendados: 10, 50, 5, 6)" << std::endl;
     std::cout << "Ingrese Vcc inicial en [V]: ";
     std::cin >> Vcc;
     std::cout << "Ingrese Amplitud inicial de la entrada en [mV]: ";
@@ -92,8 +92,9 @@ void Amplificador::setAv(int ganancia_max)
 //Observo Vcc, Vq, Vin_pico, frecuencia y Vout_pico
 void Amplificador::showMe()
 {
-    std::cout << "**********Situación actual con Vcc = " << Vcc << "[V] y punto Q en VceQ = " << Vq << "[V] :" << std::endl; 
-    std::cout << "Frecuencia = " << frecuencia_in << "[Hz], Voltaje pico de entrada = " << Vin_pico << "[mV].***** " << std::endl;
+    std::cout << "\n***********************Situación actual*********************\nVcc = " << Vcc << "[V],\nPunto Q en VceQ = " << Vq << "[V]," << std::endl; 
+    std::cout << "Frecuencia = " << frecuencia_in << "[Hz], \nVoltaje pico de entrada = " << Vin_pico << "[mV],\n"
+    <<  "Cada Cuadro Vertical = 1[V]\n Eje x (tiempo) llega hasta: " << tiempo_visto << "[ms]\n************************************************************" << std::endl;
 
 }
 
@@ -119,6 +120,7 @@ void Amplificador::changeData(int teclaPresionada)
             {
                 Vq+=0.1;
             }
+            system("clear");
             showMe();
             break;
         case FLECHA_ABAJO:
@@ -126,30 +128,37 @@ void Amplificador::changeData(int teclaPresionada)
             {
                 Vq-=0.1;
             }
+            system("clear");
             showMe();
             break;
         case FLECHA_IZQUIERDA:
             frecuencia_in-=0.1;
+            system("clear");
             showMe();
             break;
         case FLECHA_DERECHA:
             frecuencia_in+=0.1;
+            system("clear");
             showMe();
             break;
         case W_KEY:
             Vin_pico++;
+            system("clear");
             showMe();
             break;
         case S_KEY:
             Vin_pico--;
+            system("clear");
             showMe();
             break;
         case A_KEY:
             Vcc--;
+            system("clear");
             showMe();
             break;
         case D_KEY:
             Vcc++;
+            system("clear");
             showMe();
             break;
         default:
@@ -178,11 +187,13 @@ float Amplificador::setGetTiempoVisto() //en ms
     tiempo_visto = (frecuencia_in > 2000)? 1 : tiempo_visto;
     return tiempo_visto;
 }
-int Amplificador::getVm()
+float Amplificador::getVm()
 {
+    Vsaturation = 0.1 * Vcc;
     return Vsaturation;
 }
-int Amplificador::getVn()
+float Amplificador::getVn()
 {
+    Vcutoff = 0.9 * Vcc;
     return Vcutoff;
 }

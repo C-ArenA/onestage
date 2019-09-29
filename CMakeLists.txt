@@ -30,7 +30,7 @@
     #file(GLOB...) allows for wildcard additions:
     file(GLOB SOURCES "src/*.cpp")
      
-    add_executable(graphs ${SOURCES})
+    add_executable(onestage ${SOURCES})
     
-    target_link_libraries(graphs ${SDL2_LIBRARIES})
+    target_link_libraries(onestage ${SDL2_LIBRARIES})
     

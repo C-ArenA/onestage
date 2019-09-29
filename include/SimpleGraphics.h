@@ -15,7 +15,7 @@ class SimpleGraphics
         void escalas(float vcc, float time);
         void grid(float Vq);
         void axis(); //time in ms
-        void drawSomeFunc(float freq, float Vq, float Voutpeak, int Vsat, int Vcut);
+        void drawSomeFunc(float freq, float Vq, float Voutpeak, float Vsat, float Vcut);
         void update();
         int getpixpervgrid();
 	private:

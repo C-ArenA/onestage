@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/arena/onestage/src/Amplificador.cpp" "/home/arena/onestage/build/CMakeFiles/graphs.dir/src/Amplificador.cpp.o"
-  "/home/arena/onestage/src/SimpleGraphics.cpp" "/home/arena/onestage/build/CMakeFiles/graphs.dir/src/SimpleGraphics.cpp.o"
-  "/home/arena/onestage/src/mygraphics.cpp" "/home/arena/onestage/build/CMakeFiles/graphs.dir/src/mygraphics.cpp.o"
-  "/home/arena/onestage/src/onestage.cpp" "/home/arena/onestage/build/CMakeFiles/graphs.dir/src/onestage.cpp.o"
+  "/home/arena/onestage/src/Amplificador.cpp" "/home/arena/onestage/build/CMakeFiles/onestage.dir/src/Amplificador.cpp.o"
+  "/home/arena/onestage/src/SimpleGraphics.cpp" "/home/arena/onestage/build/CMakeFiles/onestage.dir/src/SimpleGraphics.cpp.o"
+  "/home/arena/onestage/src/mygraphics.cpp" "/home/arena/onestage/build/CMakeFiles/onestage.dir/src/mygraphics.cpp.o"
+  "/home/arena/onestage/src/onestage.cpp" "/home/arena/onestage/build/CMakeFiles/onestage.dir/src/onestage.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

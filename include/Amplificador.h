@@ -24,8 +24,8 @@ class Amplificador
         float getVq();
         float getfrec();
         float setGetTiempoVisto();
-        int getVm();
-        int getVn();
+        float getVm();
+        float getVn();
 	private:
         //Entradas
 		float Vcc; //Voltaje de polarización en [V]
@@ -34,8 +34,8 @@ class Amplificador
         float frecuencia_in; //frecuencia de señal de entrada [Hz]
         //Parámetros
         int Av; //Ganancia del amplificador
-        int Vsaturation;
-        int Vcutoff;
+        float Vsaturation;
+        float Vcutoff;
         //Salidas
         float Vout_pico; //Volatje de salida pico [V]
         float tiempo_visto;

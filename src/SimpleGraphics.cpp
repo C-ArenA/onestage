@@ -176,7 +176,7 @@ void SimpleGraphics::drawOutput(int xo_screen, int yo_screen, float freq_real, f
 	}
 }
 */
-void SimpleGraphics::drawSomeFunc(float freq, float Vq, float Voutpeak, int Vsat, int Vcut)
+void SimpleGraphics::drawSomeFunc(float freq, float Vq, float Voutpeak, float Vsat, float Vcut)
 {
 	setColor(0,255,0);
 	float v_salida;
