@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Amplificador.h
+cmath
+-
+iostream
+-
+
+../include/SimpleGraphics.h
+SDL2/SDL.h
+-
+iostream
+-
+
+../include/mygraphics.h
+SDL2/SDL.h
+-
+iostream
+-
+
+/home/arena/onestage/src/Amplificador.cpp
+Amplificador.h
+/home/arena/onestage/src/Amplificador.h
+
+/home/arena/onestage/src/SimpleGraphics.cpp
+SimpleGraphics.h
+/home/arena/onestage/src/SimpleGraphics.h
+
+/home/arena/onestage/src/mygraphics.cpp
+mygraphics.h
+/home/arena/onestage/src/mygraphics.h
+
+/home/arena/onestage/src/onestage.cpp
+mygraphics.h
+/home/arena/onestage/src/mygraphics.h
+SimpleGraphics.h
+/home/arena/onestage/src/SimpleGraphics.h
+Amplificador.h
+/home/arena/onestage/src/Amplificador.h
+
